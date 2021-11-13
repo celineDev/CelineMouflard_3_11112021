@@ -1,0 +1,67 @@
+.function {
+    &__title {
+        @include breakpoint(large) {
+            text-align: center;
+            margin-bottom: 1.5625rem;
+        }
+
+        p {
+            font-size: $font-xl;
+            font-weight: 700;
+            padding-bottom: 1.5625rem;
+        }
+    }
+    &__container {
+        @include breakpoint(large) {
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 1;
+            gap: 1.25rem;
+        }
+    }
+    &__button {
+        margin-bottom: 22px;
+
+        @include breakpoint(large) {
+            flex-basis: 33%;
+        }
+        > p {
+            width: 1.5625rem;
+            height: 1.5625rem;
+            border-radius: 50%;
+            background-color: $primary;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: .875rem;
+            position: relative;
+            left: 10px;
+            z-index: 10;
+        }
+    }
+    .button {
+        background-color: $lightGrey;
+        width: 100%;
+        border-radius: 1.5625rem;
+        border: none;
+        padding: 1.75rem;
+
+        &:hover {
+            background-color: lighten($primary, 36%);
+        }
+        i {
+            padding-right: 1.5625rem;
+            color: lighten($darkGrey, 30%);
+
+            &:hover {
+                color: $primary;
+            }
+        }
+        p {
+            font-weight: 700;
+            letter-spacing: -.5px;
+            color: $fontColor;
+        }
+    }
+}

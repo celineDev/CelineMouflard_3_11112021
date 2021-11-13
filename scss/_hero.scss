@@ -1,0 +1,53 @@
+.hero {
+    background-color: $lightGrey;
+
+    .container {
+    }
+    &__map {
+        background-color: $grey;
+        height: 3.125rem;
+        i {
+            padding: 0 0.9375rem;
+        }
+        p {
+            font-weight: 500;
+        }
+    }
+    &__text {
+        padding-top: 2.8125rem;
+        // padding-bottom: 5rem;
+        text-align: center;
+        p {
+            &:first-child {
+                font-weight: 700;
+                font-size: $font-xl;
+                line-height: 1.75rem;
+
+                @include breakpoint(large) {
+                    font-size: 1.625rem;
+                }
+            }
+            &:nth-child(2) {
+                font-size: $font-m;
+                padding-top: 0.625rem;
+                padding-bottom: 1.875rem;
+                color: lighten($darkGrey, 20%);
+
+                @include breakpoint(large) {
+                    font-size: $font-l;
+                }
+            }
+
+        }
+        button {
+            background: linear-gradient($secondary, $primary);
+            color: #fff;
+            padding: 1rem;
+            border-radius: 3.125rem;
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+}
