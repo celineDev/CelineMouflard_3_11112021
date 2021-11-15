@@ -49,6 +49,9 @@ h1 {
     &-jc-c {
         justify-content: center;
     }
+    &-jc-sb {
+        justify-content: space-between;
+    }
     &-ai-c {
         align-items: center;
     }
@@ -66,8 +69,8 @@ h1 {
         padding-right: 1.25rem; // 20px
 
         @include breakpoint(large) {
-            padding-top: 5rem;
-            padding-bottom: 5rem;
+            padding-top: 1.875rem;
+            padding-bottom: 1.875rem;
         }
     }
     &--px {
@@ -79,7 +82,7 @@ h1 {
         padding-bottom: 3.75rem;
 
         @include breakpoint(large) {
-            padding-bottom: 5rem;
+            padding-bottom: 1.75rem;
         }
     }
 }

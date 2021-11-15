@@ -1,8 +1,6 @@
 .hero {
     background-color: $lightGrey;
 
-    .container {
-    }
     &__map {
         background-color: $grey;
         height: 3.125rem;
@@ -37,7 +35,6 @@
                     font-size: $font-l;
                 }
             }
-
         }
         button {
             background: linear-gradient($secondary, $primary);
