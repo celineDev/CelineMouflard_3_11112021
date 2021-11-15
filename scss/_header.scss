@@ -1,0 +1,33 @@
+// index page
+.logo {
+    box-shadow: 0 0 .5rem darken($grey, 35%);
+    position: relative;
+    z-index: 10;
+}
+
+// menu pages
+.header {
+    &__title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__arrow {
+        position: absolute;
+        left: 1.25rem;
+        color: $fontColor;
+    }
+
+    &__img {
+        height: 280px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @include breakpoint(large) {
+            height: 560px;
+        }
+    }
+}

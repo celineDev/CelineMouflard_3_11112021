@@ -15,11 +15,15 @@ body {
     font-size: $font-xs;
     line-height: 1.3;
     letter-spacing: -.5px;
-    min-height: 100vh;
+    min-height: 200vh;
 
     @include breakpoint(large) {
         font-size: $font-m;
     }
+}
+
+main {
+    min-height: 100%;
 }
 
 h1, h2 {
@@ -36,13 +40,9 @@ h1 {
     align-items: center;
     height: 4.375rem;
     color: lighten(black, 10%);
+    font-weight: inherit;
 }
 
-.logo {
-    box-shadow: 0 0 .5rem darken($grey, 35%);
-    position: relative;
-    z-index: 10;
-}
 // Flexbox
 .flex {
     display: flex;
