@@ -387,6 +387,17 @@ h1 {
   background-color: #353535;
 }
 
+@media (min-width: 62em) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .footer a {
   color: #fff;
   font-size: 1rem;
