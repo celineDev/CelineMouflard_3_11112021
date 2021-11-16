@@ -32,6 +32,7 @@ main {
 
 h1, h2 {
   font-family: 'Shrikhand', cursive;
+  font-weight: inherit;
 }
 
 a {
@@ -50,7 +51,6 @@ h1 {
           align-items: center;
   height: 4.375rem;
   color: #1a1a1a;
-  font-weight: inherit;
 }
 
 .flex {
@@ -449,7 +449,6 @@ h1 {
 }
 
 .footer__logo h2 {
-  font-weight: inherit;
   font-size: 1.125rem;
   padding-bottom: 16px;
 }
@@ -473,5 +472,93 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.menu {
+  background-color: #F6F6F6;
+  letter-spacing: .4px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  top: -60px;
+}
+
+.menu__title {
+  font-size: 18px;
+}
+
+.menu__items {
+  margin-top: 30px;
+}
+
+.menu__entrees {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.menu__entrees:before {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 2px;
+  border-bottom: 3px solid #99E2D0;
+  bottom: -7px;
+}
+
+.menu__cards {
+  margin-top: 20px;
+}
+
+.menu__card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 2px 4px 8px #dddddd;
+          box-shadow: 2px 4px 8px #dddddd;
+}
+
+.menu__card:hover {
+  -webkit-box-shadow: 3px 5px 9px #d1d1d1;
+          box-shadow: 3px 5px 9px #d1d1d1;
+}
+
+.menu__card-text {
+  height: 48px;
+  margin: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu__card-text p:first-child {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.menu__card span {
+  width: 60px;
+  font-weight: 700;
+  margin-left: auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 15px;
+}
+
+.menu__card:hover .menu__check {
+  margin-right: 0;
+}
+
+.menu__check {
+  background-color: #99E2D0;
+  width: 60px;
+  margin-right: -60px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.menu__check i {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
