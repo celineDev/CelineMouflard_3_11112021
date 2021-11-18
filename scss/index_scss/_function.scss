@@ -47,6 +47,11 @@
         &:hover {
             background-color: lighten($primary, 36%);
         }
+
+        &:hover i {
+            color: $primary;
+        }
+
         i {
             padding-right: 1.5625rem;
             color: lighten($darkGrey, 30%);

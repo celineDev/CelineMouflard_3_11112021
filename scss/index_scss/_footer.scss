@@ -4,6 +4,7 @@
     background-color: $darkGrey;
 
     @include breakpoint(large) {
+        height: 150px;
         .container {
             display: flex;
             justify-content: space-between;

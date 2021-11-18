@@ -1,8 +1,6 @@
 .restaurants {
     background-color: $lightGrey;
-    .container {
 
-    }
     &__title {
         @extend .function__title;
     }
@@ -13,8 +11,7 @@
             grid-gap: 20px;
         }
     }
-    &__item {
-    }
+
     &__info {
         background-color: #fff;
         box-shadow: 2px 4px 8px darken($grey, 5%);
@@ -30,6 +27,7 @@
         @include breakpoint(medium) {
             margin-bottom: 0;
         }
+
         figure {
             position: relative;
             img {
@@ -43,6 +41,7 @@
                     opacity: .9;
                 }
             }
+
             span {
                 background-color: $tertiary;
                 color: darken($tertiary, 35%);
@@ -57,10 +56,12 @@
             }
         }
     }
+
     &__legend {
         padding: 10px 20px 15px;
         color: $fontColor;
     }
+
     &__text {
         p {
             letter-spacing: .2px;
@@ -73,34 +74,32 @@
             }
         }
     }
+
     &__heart {
         fill: transparent;
         stroke: $fontColor;
         cursor: pointer;
         position: relative;
-        // font-size: 26px;
 
         svg {
             overflow: visible;
-            width: 1.5rem;
         }
 
-        &:hover {
-            // background: linear-gradient($secondary, $primary);
-        }
+        &-full {
+            fill: url(#Gradient);
+            stroke: url(#Gradient);
+            opacity: 0;
 
-        .heart-background {
-            width: 100%;
-            height: 100%;
             position: absolute;
-            top: 0;
             left: 0;
-            fill: $secondary;
-         }
+            right: 0;
+            stroke: none;
+            transition: 200ms;
+
+            &:hover {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
     }
-}
-
-
-.fa-full {
-    color: $secondary;
 }
