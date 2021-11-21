@@ -27,7 +27,7 @@
         background-repeat: no-repeat;
 
         @include breakpoint(large) {
-            height: 560px;
+            height: 35rem;
         }
     }
 }

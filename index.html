@@ -16,6 +16,15 @@
     </header>
 
     <main>
+        <div id="bouncer" class="flex flex-jc-c flex-ai-c">
+            <div class="bouncer flex flex-jc-c flex-ai-c">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
         <div class="hero">
             <div class="hero__map flex flex-jc-c flex-ai-c">
                 <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
@@ -37,21 +46,21 @@
                     <p>1</p>
                     <button class="function__text button flex">
                         <i class="fas fa-mobile-alt fa-lg"></i>
-                        <p>Choisissez un restaurant</p>
+                        <span>Choisissez un restaurant</span>
                     </button>
                 </div>
                 <div class="function__button flex flex-ai-c">
                     <p>2</p>
                     <button class="function__text button flex">
                         <i class="fas fa-list-ul"></i>
-                        <p>Choisissez votre menu</p>
+                        <span>Choisissez votre menu</span>
                     </button>
                 </div>
                 <div class="function__button flex flex-ai-c">
                     <p>3</p>
                     <button class="function__text button flex">
                         <i class="fas fa-store"></i>
-                        <p>Dégustez au restaurant</p>
+                        <span>Dégustez au restaurant</span>
                     </button>
                 </div>
             </div>
@@ -67,7 +76,7 @@
                         <div class="restaurants__info">
                             <figure>
                                 <img src="asset/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gout">
-                                <span>Nouveau</span>
+                                <figcaption>Nouveau</figcaption>
                             </figure>
                             <div class="restaurants__legend flex flex-ai-c flex-jc-sb">
                                 <div class="restaurants__text">
@@ -97,7 +106,7 @@
                         <div class="restaurants__info">
                             <figure>
                                 <img src="asset/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantee">
-                                <span>Nouveau</span>
+                                <figcaption>Nouveau</figcaption>
                             </figure>
                             <div class="restaurants__legend flex flex-ai-c flex-jc-sb">
                                 <div class="restaurants__text">
@@ -107,13 +116,6 @@
                                 <div class="restaurants__heart">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
-
-                                        <defs>
-                                            <linearGradient id="Gradient">
-                                                <stop offset="0%"   stop-color="#FF79DA" />
-                                                <stop offset="100%" stop-color="#9356DC" />
-                                            </linearGradient>
-                                        </defs>
                                     </svg>
 
                                     <svg class="restaurants__heart-full" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -136,13 +138,6 @@
                                 <div class="restaurants__heart">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
-
-                                        <defs>
-                                            <linearGradient id="Gradient">
-                                                <stop offset="0%"   stop-color="#FF79DA" />
-                                                <stop offset="100%" stop-color="#9356DC" />
-                                            </linearGradient>
-                                        </defs>
                                     </svg>
 
                                     <svg class="restaurants__heart-full" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -165,13 +160,6 @@
                                 <div class="restaurants__heart">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
-
-                                        <defs>
-                                            <linearGradient id="Gradient">
-                                                <stop offset="0%"   stop-color="#FF79DA" />
-                                                <stop offset="100%" stop-color="#9356DC" />
-                                            </linearGradient>
-                                        </defs>
                                     </svg>
 
                                     <svg class="restaurants__heart-full" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -192,21 +180,20 @@
                 <a href="#"><h2>ohmyfood</h2></a>
             </div>
             <div class="footer__icon">
-                <a href="" class="flex flex-ai-c">
+                <a href="#" class="flex flex-ai-c">
                     <i class="fas fa-utensils fa-xs"></i>
                     <p>Proposer un restaurant</p>
                 </a>
-                <a href="" class="flex flex-ai-c">
+                <a href="#" class="flex flex-ai-c">
                     <i class="fas fa-hands-helping fa-xs"></i>
                     <p>Devenir partenaire</p>
                 </a>
             </div>
             <div class="footer__contact">
                 <a href="#">Mentions légales</a>
-                <a href="mailto:menu@contact.oc">Contact</a>
+                <a href="mailto:ohmyfood@contact.oc">Contact</a>
             </div>
         </div>
-
     </footer>
 </body>
 </html>

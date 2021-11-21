@@ -1,10 +1,10 @@
 .footer {
-    padding-top: 25px;
-    padding-bottom: 30px;
+    padding-top: 1.5625rem;
+    padding-bottom: 1.875rem;
     background-color: $darkGrey;
 
     @include breakpoint(large) {
-        height: 150px;
+        height: 9.375rem;
         .container {
             display: flex;
             justify-content: space-between;
@@ -15,7 +15,7 @@
         color: #fff;
         font-size: $font-xs;
         letter-spacing: .2px;
-        line-height: 24px;
+        line-height: 1.5rem;
 
         @include breakpoint(large) {
             font-size: $font-m;
@@ -24,7 +24,7 @@
     &__logo {
         h2 {
             font-size: $font-m;
-            padding-bottom: 16px;
+            padding-bottom: 1rem;
 
             @include breakpoint(large) {
                 font-size: $font-l;
@@ -34,8 +34,8 @@
     }
     &__icon {
         i {
-            width: 20px;
-            padding-right: 30px;
+            width: 1.25rem;
+            padding-right: 1.875rem;
         }
 
     }

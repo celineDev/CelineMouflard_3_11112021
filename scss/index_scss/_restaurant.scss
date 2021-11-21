@@ -42,7 +42,7 @@
                 }
             }
 
-            span {
+            figcaption {
                 background-color: $tertiary;
                 color: darken($tertiary, 35%);
                 font-weight: 700;
@@ -68,9 +68,6 @@
             &:first-child {
                 font-weight: 700;
                 font-size: $font-m;
-            }
-            &:nth-child(2) {
-
             }
         }
     }
