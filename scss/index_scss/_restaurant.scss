@@ -34,7 +34,7 @@
                 height: 180px;
                 width: 100%;
                 object-fit: cover;
-                object-position: bottom;
+                object-position: center;
                 transition: 200ms;
 
                 &:hover {
@@ -93,9 +93,16 @@
             stroke: none;
             transition: 200ms;
 
-            &:hover {
+            &:active {
                 transform: scale(1.1);
                 opacity: 1;
+            }
+
+            @include breakpoint(large) {
+                &:hover {
+                    transform: scale(1.1);
+                    opacity: 1;
+                }
             }
         }
     }

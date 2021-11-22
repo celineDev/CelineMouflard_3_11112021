@@ -91,11 +91,20 @@
             padding-bottom: 15px;
         }
 
-        &:hover .menu__check {
+        &:active .menu__check {
             margin-right: 0;
         }
-        &:hover .menu__check i {
+        &:active .menu__check i {
             animation: rotate 0.6s ease-in-out;
+        }
+
+        @include breakpoint(large) {
+            &:hover .menu__check {
+                margin-right: 0;
+            }
+            &:hover .menu__check i {
+                animation: rotate 0.6s ease-in-out;
+            }
         }
     }
 
