@@ -531,18 +531,23 @@ h1 {
 }
 
 .menu__cards .appearance:first-child {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
 }
 
 .menu__cards .appearance:nth-child(2) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
 }
 
 .menu__cards .appearance:nth-child(3) {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.menu__cards .appearance:nth-child(4) {
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
 }
 
 .menu__card {
