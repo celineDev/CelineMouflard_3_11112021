@@ -153,7 +153,7 @@ h1 {
 }
 
 .header__img {
-  height: 280px;
+  height: 17.5rem;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -163,6 +163,56 @@ h1 {
   .header__img {
     height: 35rem;
   }
+}
+
+#bouncer {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-animation: disappear 3s forwards 1s;
+          animation: disappear 3s forwards 1s;
+  z-index: 10;
+}
+
+.bouncer {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+.bouncer > div {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-animation: bouncer 0.5s cubic-bezier(0.01, 0.92, 0.7, 1) infinite alternate;
+          animation: bouncer 0.5s cubic-bezier(0.01, 0.92, 0.7, 1) infinite alternate;
+}
+
+.bouncer > div:nth-child(2) {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+  opacity: .8;
+}
+
+.bouncer > div:nth-child(3) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+  opacity: .6;
+}
+
+.bouncer > div:last-child {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+  opacity: .4;
 }
 
 .hero {
@@ -281,7 +331,7 @@ h1 {
   font-size: .875rem;
   position: relative;
   left: 0.625rem;
-  z-index: 10;
+  z-index: 5;
 }
 
 .function .button {
@@ -323,8 +373,8 @@ h1 {
   .restaurants__all {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
 }
@@ -559,23 +609,23 @@ h1 {
 }
 
 .menu__cards .appearance:first-child {
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
 }
 
 .menu__cards .appearance:nth-child(2) {
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
 }
 
 .menu__cards .appearance:nth-child(3) {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
 }
 
 .menu__cards .appearance:nth-child(4) {
-  -webkit-animation-delay: .8s;
-          animation-delay: .8s;
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
 }
 
 .menu__card {
@@ -740,6 +790,32 @@ h1 {
   100% {
     -webkit-transform: translateY(-100px);
             transform: translateY(-100px);
+  }
+}
+
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 /*# sourceMappingURL=style.css.map */

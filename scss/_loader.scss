@@ -1,13 +1,13 @@
 #bouncer {
     position: fixed;
+    top: 0;
     height: 100vh;
-    min-height: calc(100vh - 50%);
     width: 100%;
     text-align: center;
-    background-color: #fff;
-    opacity: 0.9;
-    animation: disapear 3s forwards;
+    background: rgba(255, 255, 255, .9);
+    animation: disappear 3s forwards 1s;
     z-index: 10;
+    // display: none;
 }
 
 .bouncer {
@@ -21,7 +21,7 @@
         height: 1.25rem;
         border-radius: 50%;
         background: linear-gradient($secondary, $primary);
-        animation: bouncer .5s cubic-bezier(0, .83, 1, 1) infinite alternate;
+        animation: bouncer .5s cubic-bezier(.01,.92,.7,1) infinite alternate;
 
         &:nth-child(2) {
             animation-delay: .1s;
@@ -35,17 +35,5 @@
             animation-delay: .3s;
             opacity: .4;
         }
-    }
-}
-
-@keyframes disapear {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
     }
 }
