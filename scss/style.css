@@ -266,6 +266,7 @@ h1 {
   color: #9356DC;
 }
 .function .button i {
+  align-self: center;
   padding-right: 1.5625rem;
   color: #828282;
 }
