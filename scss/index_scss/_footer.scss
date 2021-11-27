@@ -11,15 +11,21 @@
         }
     }
 
-    a {
-        color: #fff;
-        font-size: $font-xs;
-        letter-spacing: .2px;
-        line-height: 1.5rem;
+    ul {
+        li {
+            list-style-type: none;
+            a {
+                color: #fff;
+                font-size: $font-xs;
+                letter-spacing: .2px;
+                line-height: 1.5rem;
 
-        @include breakpoint(large) {
-            font-size: $font-m;
+            @include breakpoint(large) {
+                font-size: $font-m;
+            }
         }
+    }
+
     }
     &__logo {
         h2 {
@@ -35,13 +41,13 @@
     &__icon {
         transition: 1s;
 
-        p {
-            transition: 200ms;
+        li {
+            > a:hover {
+                transition: 200ms;
+                color: lighten($primary, 30%);
+            }
         }
 
-        > a:hover {
-            color: lighten($primary, 30%);
-        }
         i {
             width: 1.25rem;
             padding-right: 1.875rem;
@@ -52,9 +58,11 @@
         display: flex;
         flex-direction: column;
 
-        > a:hover {
-            transition: 200ms;
-            color: lighten($primary, 30%);
+        li {
+            > a:hover {
+                transition: 200ms;
+                color: lighten($primary, 30%);
+            }
         }
     }
 }
