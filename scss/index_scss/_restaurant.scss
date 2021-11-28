@@ -19,6 +19,7 @@
         border-radius: 15px;
         overflow: hidden;
         transition: 200ms;
+        position: relative;
 
         &:hover {
             box-shadow: 3px 5px 9px darken($grey, 10%);
@@ -28,21 +29,20 @@
             margin-bottom: 0;
         }
 
-        figure {
-            position: relative;
-            img {
-                height: 180px;
-                width: 100%;
-                object-fit: cover;
-                object-position: center;
-                transition: 200ms;
+        img {
+            height: 180px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: 200ms;
 
-                &:hover {
-                    opacity: .9;
-                }
+            &:hover {
+                opacity: .9;
             }
+        }
 
-            figcaption {
+        figcaption {
+            > p {
                 background-color: $tertiary;
                 color: darken($tertiary, 35%);
                 font-weight: 700;
@@ -63,7 +63,7 @@
     }
 
     &__text {
-        p {
+        > p {
             letter-spacing: .2px;
             &:first-child {
                 font-weight: 700;
