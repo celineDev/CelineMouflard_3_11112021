@@ -12,36 +12,34 @@
     <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
+    <div id="bouncer" class="flex flex-jc-c flex-ai-c">
+        <div class="bouncer flex flex-jc-c flex-ai-c">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
     <header>
         <a href="#"><h1 class="logo">ohmyfood</h1></a>
     </header>
 
     <main>
-        <div id="bouncer" class="flex flex-jc-c flex-ai-c">
-            <div class="bouncer flex flex-jc-c flex-ai-c">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-
-        <div class="hero">
+        <section class="hero">
             <div class="hero__map flex flex-jc-c flex-ai-c">
                 <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                 <p>Paris, Belleville</p>
             </div>
             <div class="hero__text container--pb container--px">
-                <p>Réservez le menu qui vous convient</p>
+                <h2>Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d'execption, selectionnés par nos soins</p>
                 <button class="button hero__cta">Explorer nos restaurants</button>
             </div>
-        </div>
+        </section>
 
-        <div class="function container container--pall">
-            <div class="function__title">
-                <p>Fonctionnement</p>
-            </div>
+        <section class="function container container--pall">
+            <h2 class="function__title">Fonctionnement</h2>
             <div class="function__container">
                 <div class="function__button flex flex-ai-c">
                     <p>1</p>
@@ -65,13 +63,11 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="restaurants">
+        <section class="restaurants">
             <div class="container container--pall">
-                <div class="restaurants__title">
-                    <p>Restaurants</p>
-                </div>
+                <h2 class="restaurants__title">Restaurants</h2>
                 <div class="restaurants__all">
                     <a href="menu_la-palette-du-gout.html" class="restaurants__item">
                         <figure class="restaurants__info">
@@ -129,21 +125,19 @@
                     <a href="menu_a-la-francaise.html" class="restaurants__item">
                         <figure class="restaurants__info">
                             <img src="asset/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la francaise">
-                            <figcaption>
-                                <div class="restaurants__legend flex flex-ai-c flex-jc-sb">
-                                    <div class="restaurants__text">
-                                        <p>A la française</p>
-                                        <p>Cité Rouge</p>
-                                    </div>
-                                    <div class="restaurants__heart">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
-                                        </svg>
+                            <figcaption class="restaurants__legend flex flex-ai-c flex-jc-sb">
+                                <div class="restaurants__text">
+                                    <p>A la française</p>
+                                    <p>Cité Rouge</p>
+                                </div>
+                                <div class="restaurants__heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
+                                    </svg>
 
-                                        <svg class="restaurants__heart-full" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
-                                        </svg>
-                                    </div>
+                                    <svg class="restaurants__heart-full" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
+                                    </svg>
                                 </div>
                             </figcaption>
                         </figure>
@@ -151,28 +145,26 @@
                     <a href="menu_le-delice-des-sens.html" class="restaurants__item">
                         <figure class="restaurants__info">
                             <img src="asset/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le delice des sens">
-                            <figcaption>
-                                <div class="restaurants__legend flex flex-ai-c flex-jc-sb">
-                                    <div class="restaurants__text">
-                                        <p>Le délice des sens</p>
-                                        <p>Folie-Méricourt</p>
-                                    </div>
-                                    <div class="restaurants__heart">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
-                                        </svg>
+                            <figcaption class="restaurants__legend flex flex-ai-c flex-jc-sb">
+                                <div class="restaurants__text">
+                                    <p>Le délice des sens</p>
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                                <div class="restaurants__heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
+                                    </svg>
 
-                                        <svg class="restaurants__heart-full" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
-                                        </svg>
-                                    </div>
+                                    <svg class="restaurants__heart-full" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
+                                    </svg>
                                 </div>
                             </figcaption>
                         </figure>
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer class="footer">

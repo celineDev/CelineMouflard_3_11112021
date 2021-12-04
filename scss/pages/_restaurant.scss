@@ -3,6 +3,7 @@
 
     &__title {
         @extend .function__title;
+        font-family: 'Roboto', sans-serif;
     }
     &__all {
         @include breakpoint(medium) {

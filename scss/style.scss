@@ -1,14 +1,15 @@
-@import "variables";
-@import "mixins";
-@import "globals";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/animations";
 
-@import "header";
-@import "loader";
+@import "base/globals";
 
-@import "index_scss/hero";
-@import "index_scss/function";
-@import "index_scss/restaurant";
-@import "index_scss/footer";
+@import "pages/hero";
+@import "pages/restaurant";
+@import "pages/function";
+@import "pages/menu";
 
-@import "menu/menu";
-@import "menu/animations";
+@import "components/loader";
+
+@import "layout/header";
+@import "layout/footer";
